@@ -62,7 +62,9 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('err-msg').style.display = 'none';
         }
 
-        // Se valido, enviar email real
+        // Se valido, enviar email para o meu email real usando o FormSubmit.co (serviço gratuito de envio de formulários por email)
+        // irei usar o projeto para manter como contato real.
+        //aprendi sobre o FormSubmit fora da academia.
         if (valido) {
             try {
                 const response = await fetch(`https://formsubmit.co/ajax/${CONTACT_EMAIL}`, {
