@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Profissional | João Paulo Pinheiro Mourão</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="container header-content">
+            <h1 class="user-name">João Paulo Pinheiro Mourão</h1>
+            
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#formacao">Formação</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><button class="btn-theme" id="btn-theme">Tema Escuro</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Sobre Mim -->
+        <section id="sobre">
+            <h2>Sobre Mim</h2>
+            <p><strong>Desenvolvedor .NET Fullstack</strong> residente em Cascavel, PR.</p>
+            <p>Atuo no desenvolvimento e sustentação de sistemas corporativos (ERP e CRM), com foco técnico em backend utilizando APIs em .NET e Clean Architecture. Tenho domínio em SQL Server, análise técnica e resolução de incidentes em produção.</p>
+            <p><strong>Hobbies:</strong> Estudo de arquitetura de software, mentoria académica e exploração de novas funcionalidades do C# e .NET.</p>
+        </section>
+
+        <!-- Formação e exps  -->
+        <section id="formacao">
+            <h2>Formação e Experiência</h2>
+            
+            <h3>Educação</h3>
+            <p><strong>2025 - 2029:</strong> Bacharelado em Engenharia de Software - Uninter, PR.</p>
+            
+            <h3 style="margin-top: 20px;">Experiência Profissional</h3>
+            <p><strong>02/2026 - Presente:</strong> Analista de Sistema ERP - Prisma Software de Gestão</p>
+            <p><strong>03/2025 - 02/2026:</strong> Assistente de Sistemas - Grupo Tangipar</p>
+            <p><strong>09/2025 - 02/2026:</strong> Desenvolvedor .NET Jr - D2K Serviços & Transportes</p>
+            
+            <h3 style="margin-top: 20px;">Idiomas</h3>
+            <p>Português (Nativo), Inglês (A2)</p>
+        </section>
+
+        <!-- Portfólio -->
+        <section id="portfolio">
+            <h2>Portfólio</h2>
+            
+            <h3>React Todo List</h3>
+            <p>Aplicação de tarefas construída com React. Gestão de afazeres com interface reativa.</p>
+            <a href="https://react-todo-list-three-iota.vercel.app/" target="_blank" style="color: #0078d4; font-weight: bold; text-decoration: none;">Acessar Projeto →</a>
+            
+            <h3 style="margin-top: 20px;">Organo</h3>
+            <p>Plataforma web interativa desenvolvida com foco em experiência do utilizador.</p>
+            <a href="https://organo-tau-fawn.vercel.app/" target="_blank" style="color: #0078d4; font-weight: bold; text-decoration: none;">Acessar Projeto →</a>
+            
+            <h3 style="margin-top: 20px;">Tec Board</h3>
+            <p>Mural de eventos.</p>
+            <a href="https://tec-board-jet.vercel.app/" target="_blank" style="color: #0078d4; font-weight: bold; text-decoration: none;">Acessar Projeto →</a>
+        </section>
+
+        <!-- Contato -->
+        <section id="contato">
+            <h2>Contato</h2>
+            
+            <form id="contact-form" class="lattes-form">
+                <div class="form-group">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome">
+                    <span class="error-msg" id="err-nome">Nome é obrigatório</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="seu@email.com">
+                    <span class="error-msg" id="err-email">E-mail inválido</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Sua mensagem..."></textarea>
+                    <span class="error-msg" id="err-msg">Mensagem é obrigatória</span>
+                </div>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Modal de Sucesso quando o formulário for enviado -->
+    <div id="modal-overlay">
+        <div class="modal-content">
+            <h3>✓ Sucesso!</h3>
+            <p>Sua mensagem foi enviada com sucesso.</p>
+            <button id="close-modal">Fechar</button>
+        </div>
+    </div>
+
+
+    <footer>
+        <p>&copy; 2025 João Paulo Pinheiro Mourão. Todos os direitos reservados. O uso destes dados é restrito.</p>
+        <p>Cascavel, PR - Brasil</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
