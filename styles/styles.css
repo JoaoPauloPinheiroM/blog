@@ -106,12 +106,16 @@ section h2 {
 .contatos p{
         margin-bottom: 20px;
 }
+/* .formacao-exp .exp h3{
+    margin-bottom: 15px;
+    border-bottom: 2px solid #b1d5f1;
+
+} */
 .formacao-exp .exp p{
     margin-bottom: 15px;
     border-bottom: 2px solid #b1d5f1;
 
 }
-
 
 /* Form */
 .lattes-form {
