@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (savedTheme === 'dark') {
         body.classList.add('dark-mode');
         btnTheme.textContent = 'Tema Claro';
-    }
+     }
 
     btnTheme.addEventListener('click', () => {
         body.classList.toggle('dark-mode');
@@ -19,7 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
         btnTheme.textContent = isDark ? 'Tema Claro' : 'Tema Escuro';
         localStorage.setItem('theme', isDark ? 'dark' : 'light');
     });
-
     /*
     * VALIDAÇÃO DE FORMULÁRIO E MODAL DE SUCESSO
     * onde eu manipulei o DOM diretamente para validar os campos.
